@@ -3,17 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Om oss - GoGoCandy</title>
+  <title>Om oss - ChockladHörnan</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
+  <a href="#main-content" class="skip-link">Hoppa till innehåll</a>
+
   <header>
-    <label for="menu-toggle" class="meny-knapp">☰</label>
+    <label for="menu-toggle" class="meny-knapp" aria-label="Öppna meny">☰</label>
     <h1>Om oss</h1>
   </header>
 
   <input type="checkbox" id="menu-toggle">
-  <nav>
+  <nav aria-label="Huvudmeny">
     <ul>
       <li><a href="index.html">Hem</a></li>
       <li><a href="produkter.html">Produkter</a></li>
@@ -22,16 +25,26 @@
     </ul>
   </nav>
 
-  <main>
+  <main id="main-content">
     <section class="innehall">
       <h2>Vår historia</h2>
-      <p>GoGoCandy startades i Stockholm 2021 med målet att skapa praliner som smakar lika fantastiskt som de ser ut.  
-      Varje pralin tillverkas för hand med noggrant utvalda ingredienser och massor av kärlek.</p>
+      <p>
+        ChockladHörnan startades i Stockholm 2021 med målet att skapa choklad som smakar lika fantastiskt som de ser ut.
+        Varje choklad tillverkas för hand med noggrant utvalda ingredienser och massor av kärlek.
+      </p>
+
+      <details>
+        <summary>Vår filosofi</summary>
+        <p>
+          Vi tror på kvalitet framför kvantitet. Därför använder vi bara naturliga ingredienser och ekologisk choklad.
+          Vårt mål är att sprida glädje, en bit i taget.
+        </p>
+      </details>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 GoGoCandy | Stockholm, Sverige</p>
+    <p>&copy; 2025 ChockladHörnan | Stockholm, Sverige</p>
   </footer>
 </body>
 </html>
