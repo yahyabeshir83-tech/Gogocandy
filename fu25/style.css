@@ -1,33 +1,45 @@
 body {
-  font-family: "Segoe UI", sans-serif;
-  margin: 01;
-  background-color: #fff7f9;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #ffffff;
   color: #333;
   line-height: 1.6;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* gör att body alltid fyller hela skärmen */
 }
 
-/* === HEADER === */
+main {
+  flex: 1; /* tar upp allt utrymme mellan header och footer */
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #ff66a3;
+  color: white;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* === Header === */
 header {
   background-color: #b4764a;
   color: white;
   padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   position: relative;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 1.8rem;
-  text-align: center;
-  flex-grow: 1;
-}
-
-/* === MENYKNAPP === */
 .meny-knapp {
   position: absolute;
   left: 1rem;
+  top: 1rem;
   font-size: 2rem;
   cursor: pointer;
 }
@@ -36,27 +48,24 @@ header h1 {
   display: none;
 }
 
-/* === NAVIGATION === */
+/* === Navigering === */
 nav {
   background-color: #7b4b29;
   text-align: center;
-  padding: 0.5rem;
 }
 
 nav ul {
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
   display: none;
   flex-direction: column;
 }
 
-nav ul li {
-  margin: 10px 0;
-}
-
 nav a {
+  display: block;
   color: white;
+  padding: 0.5rem;
   text-decoration: none;
   font-weight: bold;
 }
@@ -66,33 +75,30 @@ nav a.active {
   text-decoration: underline;
 }
 
-/* === Visa menyn när checkbox är aktiv === */
+/* Visa meny när kryssruta är markerad */
 #menu-toggle:checked + nav ul {
   display: flex;
 }
 
-/* === HERO === */
 #hero {
   text-align: center;
   padding: 3rem 1rem;
-  background-color: #ffffff;
+  background-color: white;
 }
 
 .cta {
   display: inline-block;
-  background-color: #ff3385;
+  background-color: #ff66a3;
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
-  margin-top: 1rem;
 }
-
 .cta:hover {
-  background-color: #ff66a3;
+  background-color: #ff3385;
 }
 
-/* === PRODUKTER === */
+/* === Produkter === */
 .produkt-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -113,37 +119,20 @@ nav a.active {
   border-radius: 10px;
 }
 
-.produkt h3 {
-  color: #ff3385;
-}
-
 .pris {
   font-weight: bold;
-  margin: 0.5rem 0;
 }
 
-button {
-  background-color: #ff66a3;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-button:hover {
-  background-color: #ff3385;
-}
-
+/* === Footer === */
 footer {
   text-align: center;
-  background-color: #b4764a; 
+  background-color: #b4764a;
   color: white;
   padding: 1.5rem;
+  margin-top: auto; /* gör footern sticky i botten */
 }
 
-/* === RESPONSIV DESIGN === */
+/* === Responsiv design === */
 @media (min-width: 700px) {
   .meny-knapp {
     display: none;
@@ -158,3 +147,13 @@ footer {
 }
 
 
+@media (min-width: 1024px) {
+  .produkt-grid {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem 5rem;
+  }
+
+  #hero {
+    padding: 5rem 2rem;
+  }
+}
