@@ -82,7 +82,7 @@ nav a.active {
   display: flex;
 }
 
-/* === Hero === */
+
 #hero {
   text-align: center;
   padding: 3rem 1rem;
@@ -157,4 +157,3 @@ footer {
     padding: 5rem 2rem;
   }
 }
-
