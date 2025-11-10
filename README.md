@@ -31,4 +31,4 @@ Begränsningar & förbättringsidéer
 
 Ingen riktig varukorg eller dynamiska funktioner.  
 Bilder är inte optimerade för prestanda.  
-Endast en brytpunkt – fle
+Bättre design val.
