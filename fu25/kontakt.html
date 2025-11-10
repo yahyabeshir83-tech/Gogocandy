@@ -3,17 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontakt - GoGoCandy</title>
+  <title>Kontakt - ChockladHörnan</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
+  <a href="#main-content" class="skip-link">Hoppa till innehåll</a>
+
   <header>
-    <label for="menu-toggle" class="meny-knapp">☰</label>
+    <label for="menu-toggle" class="meny-knapp" aria-label="Öppna meny">☰</label>
     <h1>Kontakt</h1>
   </header>
 
   <input type="checkbox" id="menu-toggle">
-  <nav>
+  <nav aria-label="Huvudmeny">
     <ul>
       <li><a href="index.html">Hem</a></li>
       <li><a href="produkter.html">Produkter</a></li>
@@ -22,16 +25,17 @@
     </ul>
   </nav>
 
-  <main>
+  <main id="main-content">
     <section class="innehall">
       <h2>Kontakta oss</h2>
-      <p> Har ni frågor och funderinger tveka inte på att maila oss!</p>
-      <p> <a href="mailto:info@GoGoCandy.se">info@GoGoCandy.se</a></p>
+      <p>Har du frågor eller funderingar? Tveka inte att höra av dig till oss!
+        <a href="mailto:info@ChockladHörnan.se">info@ChockladHörnan.se</a>
+      </p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 GoGoCandy | Stockholm, Sverige</p>
+    <p>&copy; 2025 ChockladHörnan | Stockholm, Sverige</p>
   </footer>
 </body>
 </html>
