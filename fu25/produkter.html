@@ -3,17 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Produkter - GoGoCandy</title>
+  <title>Produkter - ChockladHörnan</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <a href="#main-content" class="skip-link">Hoppa till innehåll</a>
+
   <header>
-    <label for="menu-toggle" class="meny-knapp">☰</label>
-    <h1>Produkter</h1>
+    <label for="menu-toggle" class="meny-knapp" aria-label="Öppna meny">☰</label>
+    <h1>Våra produkter</h1>
   </header>
 
   <input type="checkbox" id="menu-toggle">
-  <nav>
+  <nav aria-label="Huvudmeny">
     <ul>
       <li><a href="index.html">Hem</a></li>
       <li><a href="produkter.html" class="active">Produkter</a></li>
@@ -22,37 +25,39 @@
     </ul>
   </nav>
 
-  <main id="produkter">
-    <h2>Våra praliner</h2>
-    <div class="produkt-grid">
+  <main id="main-content">
+    <section class="innehall">
+      <h2>Handgjorda choklad bitar</h2>
+      <p>All våra choklad är tillverkade för hand i vårt lilla konditori i Stockholm.  
+      Vi använder endast de bästa ingredienserna och massor av kärlek.</p>
+    </section>
+
+    <section class="produkt-grid">
       <article class="produkt">
-        <img src="https://static.partyking.org/fit-in/1300x0/products/original/ferrero-collection-praliner-chokladask-77856-1.jpg" alt="Ferrero Rocher">
-        <h3>Ferrero</h3>
-        <p>Varje smak unik.</p>
-        <p class="pris">109 kr / ask</p>
-        <button>Köp nu</button>
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRr8f3lR_u9r5iTAGlVnLQclvNltJbkSvVkrjcLhrDa_Eyqhfn4pflemTyGMN-UCazZBVw1dwKc0dc0oYoTpZBnDCmzaELFWLDTgQ3P91uFUBjX7t6seRnKBg&usqp=CAc" alt="Choklad med karamellnfyllning" loading="lazy">
+        <h3>Karamellchoklad</h3>
+        <p class="pris">25 kr/st</p>
+        <button>Köp</button>
       </article>
 
       <article class="produkt">
-        <img src="https://i2.wp.com/segagubben.se/wp-content/uploads/2016/11/products-anthon-berg-diplomat-1000gr-open-chokladask-chokladaskar-sega-gubben.jpg?w=940&ssl=1" alt="Pralinask">
-        <h3>Pralinask</h3>
-        <p>En lyxig blandning av våra bästa praliner.</p>
-        <p class="pris">129 kr</p>
-        <button>Köp nu</button>
+        <img src="https://m.media-amazon.com/images/I/71ahSjQ-tCL._AC_UF1000,1000_QL80_.jpg" alt="Choklad med kex" loading="lazy">
+        <h3>kexchoklad</h3>
+        <p class="pris">25 kr/st</p>
+        <button>Köp</button>
       </article>
 
       <article class="produkt">
-        <img src="https://images.oda.com/prod/local_products/e25a41c4-ba0c-4436-836b-62ec79b6869a.jpg?fit=bounds&format=auto&optimize=medium&width=629&s=0xb458c0449c988036fd2cd3e068383d303dd96f1a" alt="Karamellpralin">
-        <h3>Karamellpralin</h3>
-        <p>Fylld med kolasås och täckt av mörk choklad.</p>
-        <p class="pris">39 kr / ask</p>
-        <button>Köp nu</button>
+        <img src="https://static.vecteezy.com/ti/gratis-foton/p2/46938470-choklad-bar-med-notter-och-choklad-pa-vit-bakgrund-gratis-fotona.jpg" alt="Choklad med nötter" loading="lazy">
+        <h3>Choklad med nötter</h3>
+        <p class="pris">25 kr/st</p>
+        <button>Köp</button>
       </article>
-    </div>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 GoGoCandy | Stockholm, Sverige</p>
+    <p>&copy; 2025 ChockladHörnan | Stockholm, Sverige</p>
   </footer>
 </body>
 </html>
